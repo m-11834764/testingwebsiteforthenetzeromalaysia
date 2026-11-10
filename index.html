@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Net-zero Malaysia</title>
+<meta name="description" content="Facts and figures on Malaysia's path to net zero: energy, transport, aviation and policy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#home">Net-zero Malaysia</a>
+  <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#energy">Energy</a>
+    <a href="#transport">Transport</a>
+    <a href="#aviation">Aviation</a>
+    <a href="#policy">Policy</a>
+    <a href="#sources">Sources</a>
+  </nav>
+</header>
+
+<main>
+<section class="page" id="home" data-title="Home">
+  <div class="hero">
+    <p class="lead">Malaysia has set itself a deadline for net-zero greenhouse gas emissions. Time left until 1 January 2050:</p>
+    <p class="clock"><span id="days">0</span> days</p>
+    <p class="sub">This site collects the targets, the numbers so far, and the gaps between them.</p>
+  </div>
+  <div class="facts">
+    <div><b>2050</b><span>Net-zero target year, set out in the National Energy Transition Roadmap (NETR, 2023)</span></div>
+    <div><b>70%</b><span>Renewable share of installed power capacity targeted for 2050</span></div>
+    <div><b>2044</b><span>Coal plant phase-out date stated by the energy minister in 2025</span></div>
+    <div><b>15–30 Mt</b><span>CO₂e absolute cut by 2035 from peak, under NDC 3.0</span></div>
+  </div>
+  <h2>Explore by sector</h2>
+  <div class="tiles">
+    <a href="#energy"><h3>Energy</h3><p>Coal, gas and solar in the power mix, and the 2050 renewable target.</p></a>
+    <a href="#transport"><h3>Transport</h3><p>Electric vehicle targets and the charger network that is catching up.</p></a>
+    <a href="#aviation"><h3>Aviation</h3><p>The 2024 blueprint and why sustainable fuel carries most of the load.</p></a>
+    <a href="#policy"><h3>Policy</h3><p>Emissions targets, the carbon market, and the carbon tax.</p></a>
+  </div>
+</section>
+
+<section class="page" id="energy" data-title="Energy" hidden>
+  <h1>Energy: moving off coal</h1>
+  <p class="intro">Electricity is the largest lever. Malaysia’s plan leans on solar, with gas as a bridge away from coal.</p>
+  <h2>Who generates the power today</h2>
+  <p>Share of annual generation in Peninsular Malaysia (grid operator data analysed by Reuters).</p>
+  <div class="chart" data-chart="mix"></div>
+  <p class="note">Coal’s share rose in 2025 even as gas and solar grew in absolute terms. Whole-country figures differ by source: Ember put coal near 43%, gas near 37% and solar just over 2% in 2025 reporting.</p>
+  <h2>Renewable share of installed capacity</h2>
+  <div class="chart" data-chart="re"></div>
+  <p class="note">The energy minister said in October 2025 that renewable capacity had reached about 30%. Capacity is not generation: solar capacity produces far less than 30% of the electricity.</p>
+  <h2>Other NETR targets</h2>
+  <ul class="list">
+    <li><b>Coal:</b> the 2023 roadmap targets zero coal generation by 2050. In October 2025 the minister said coal capacity would fall 50% by 2035 and plants would be phased out by 2044.</li>
+    <li><b>Hydrogen:</b> one low-carbon hydrogen hub by 2030, two more by 2050, and up to 2.5 million tonnes a year of green hydrogen by 2050.</li>
+    <li><b>Carbon capture and storage:</b> three hubs by 2030 (up to 15 million tonnes a year), three more by 2050 (40 to 80 million tonnes a year).</li>
+    <li><b>Cost:</b> the roadmap estimates RM1.2 to 1.3 trillion of investment is needed by 2050.</li>
+  </ul>
+</section>
+
+<section class="page" id="transport" data-title="Transport" hidden>
+  <h1>Transport: electric vehicles and chargers</h1>
+  <p class="intro">The Low Carbon Mobility Blueprint 2021–2030 set the first charger and vehicle targets. The chargers are behind schedule; fast chargers are not.</p>
+  <h2>Public EV charge points</h2>
+  <div class="chart" data-chart="ev"></div>
+  <p class="note">The 2025 target of 10,000 was missed (about 57% reached by December 2025). A newer target of 30,000 by 2030 was reported in July 2026. Dates differ because each figure comes from a different official statement or dashboard.</p>
+  <h2>Vehicle targets</h2>
+  <ul class="list">
+    <li><b>2030:</b> electric vehicles at 15% of total industry volume under the Low Carbon Mobility Blueprint. NETR-linked reporting cites 20% for xEVs (electric and hybrid types) by 2030.</li>
+    <li><b>2050:</b> 80% market share for electric vehicles.</li>
+    <li><b>Today:</b> an industry body said in 2024 that only about 2% of vehicles on the road were electric.</li>
+    <li><b>Policy shift:</b> imported EV incentives are giving way to local assembly, which affects prices.</li>
+  </ul>
+</section>
+
+<section class="page" id="aviation" data-title="Aviation" hidden>
+  <h1>Aviation: fuel is the hard part</h1>
+  <p class="intro">The Malaysia Aviation Decarbonisation Blueprint, launched in September 2024, aims for net-zero emissions in international aviation as early as 2050.</p>
+  <h2>Where the cuts are meant to come from</h2>
+  <p>Share of the 2050 reduction by measure (as presented by Malaysia to ICAO).</p>
+  <div class="chart" data-chart="av"></div>
+  <p class="note">Sustainable aviation fuel (SAF) and carbon offsets together make up over three quarters of the plan, so the target depends on fuel supply and credible credits.</p>
+  <h2>Milestones</h2>
+  <ul class="list">
+    <li><b>Blending:</b> the NETR’s indicative SAF blend starts near 1% and rises to 47% by 2050.</li>
+    <li><b>Supply:</b> Petronas said it would produce SAF by 2028. In 2025 it delivered the first locally blended SAF to Malaysia Airlines.</li>
+    <li><b>Mandate:</b> at launch in 2024 the government did not plan to force airlines to use SAF yet.</li>
+    <li><b>Cost:</b> in October 2026 the head of Malaysia Aviation Group did not rule out a passenger green levy to cover SAF costs.</li>
+    <li><b>Fleet:</b> Malaysia Airlines has ordered 40 Airbus A330neo and 55 Boeing 737 MAX aircraft.</li>
+  </ul>
+</section>
+
+<section class="page" id="policy" data-title="Policy" hidden>
+  <h1>Policy: targets and pricing</h1>
+  <h2>NDC 3.0</h2>
+  <p>Submitted in October 2025, it is Malaysia’s first absolute target. Emissions are expected to peak between 2029 and 2034, then fall by 15 to 30 million tonnes of CO₂e by 2035. Up to 20 million tonnes are unconditional; the rest depends on international finance and technology support. Earlier pledges were intensity targets, which allow total emissions to rise.</p>
+  <h2>Carbon pricing</h2>
+  <p>Budget 2026 announced a carbon tax starting with energy, iron and steel. Reported starting rates were around RM45 per tonne, but the timeline is under review. Malaysia launched its first National Carbon Market Policy in 2026 to guide pricing and carbon credit trading.</p>
+  <h2>Climate Change Bill</h2>
+  <p>A National Climate Change Bill and a National Climate Change Authority Bill were being drafted, with mandatory emissions reporting and a legal basis for targets. Check the Parliament of Malaysia website for its current status.</p>
+  <h2>Local action</h2>
+  <p>The Natural Resources Ministry aims for 200 low-carbon zones by 2030. Seventy local authorities had started by February 2026.</p>
+</section>
+
+<section class="page" id="sources" data-title="Sources" hidden>
+  <h1>Sources and caveats</h1>
+  <p class="intro">Figures were checked against news and official reporting in November 2026. Targets and statistics change; confirm any number you plan to cite.</p>
+  <ul class="list">
+    <li>NETR launch coverage: Argus Media (August 2023); Pinsent Masons Out-Law</li>
+    <li>Renewable and coal statements, October 2025: Bernama; Malaysiakini</li>
+    <li>NDC 3.0: Ministry of Natural Resources and Environmental Sustainability (nres.gov.my); UNDP Malaysia; The Star</li>
+    <li>Carbon tax and carbon market policy: Eco-Business; Pemandu Associates</li>
+    <li>Power mix: Reuters via The Star (January 2026); Ember; Free Malaysia Today</li>
+    <li>EV chargers: Paul Tan; Borneo Post; SoyaCincau; MIDA</li>
+    <li>Aviation: ICAO working paper A42-WP/579; Malay Mail; Hydrocarbon Processing; The Star; AP</li>
+  </ul>
+  <p class="note">Figures from different sources use different scopes (Peninsular Malaysia or national, capacity or generation, target or actual). Each chart note says which applies.</p>
+</section>
+</main>
+
+<footer>Net-zero Malaysia. An informational project, not official government advice.</footer>
+<script src="script.js"></script>
+</body>
+</html>
